@@ -11,7 +11,15 @@ Node* LinkedList::searchList(int key) {
 
     Node* ptr = NULL;
 
-    return ptr;
+    ptr = head;
+    while(ptr != nullptr)
+    {
+        if(ptr->key == key)
+        {
+          return ptr;
+        }
+    }
+    return NULL;
 }
 
 
@@ -22,19 +30,35 @@ Node* LinkedList::searchList(int key) {
 void LinkedList::insert(Node* prev, int newKey){
 
   //Check if head is Null i.e list is empty
-  if(head == NULL){
-
+  Node* node = new Node();
+  node->key = newKey;
+  node->next = head;
+  if(head == nullptr)
+  {
+      head = node;
   }
+  
+
 
   // if list is not empty, look for prev and append our node there
-  else if(prev == NULL)
+   if(node != nullptr)
   {
-
+    prev->next = node;
   }
   //general insertion
-  else{
+  else
+  {
 
-      }
+    while(node != nullptr)
+    {
+        prev->next = node;
+
+    }
+
+
+
+
+  }
 }
 
 

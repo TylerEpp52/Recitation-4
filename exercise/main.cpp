@@ -30,12 +30,12 @@ int main()
 	li.printList();
 	cout<<endl;
 
-
+	
 	/*******************************
 	Gold Problem - Implement the swapFirstAndLast function
 	********************************/
 
-    cout << "Swapping First and last nodes" << endl;
+    /*cout << "Swapping First and last nodes" << endl;
 
     if(!li.swapFirstAndLast()) {
         cout << "Swapping Failed!" << endl;
@@ -57,5 +57,5 @@ int main()
         cout << "Swapping Failed!" << endl;
     }
 	li2.printList();
-    cout << endl;
+    cout << endl;*/
 }
